@@ -1,0 +1,39 @@
+{
+  "name": "school-management-cy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "e2e:chrome": "cypress run --browser chrome --headed",
+    "e2e:chrome-headless": "cypress run --browser chrome",
+    "e2e:chromium": "cypress run --browser chromium --headed",
+    "e2e:chromium-headless": "cypress run --browser chrome",
+    "e2e:edge": "cypress run --browser edge --headed",
+    "e2e:edge-headless": "cypress run --browser edge",
+    "e2e:firefox": "cypress run --browser firefox --headed",
+    "e2e:firefox-headless": "cypress run --browser firefox",
+    "e2e:electron": "cypress run --headed",
+    "e2e:electron-headless": "cypress run"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/results.json"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.1",
+    "cypress": "^13.14.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "multiple-cucumber-html-reporter": "^3.8.0"
+  }
+}
